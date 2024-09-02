@@ -1,5 +1,5 @@
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Stack } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import Colors from "@/constants/Colors";
@@ -8,6 +8,11 @@ import CategoryButtons from "@/components/CategoryButtons";
 
 const Page = () => {
   const headerHeight = useHeaderHeight();
+  const [category, setCategory] = useState('all');
+
+  const onCategoryChanged = (category: string) => {
+    setCategory(category);
+  }
 
   return (
     <>
@@ -56,7 +61,8 @@ const Page = () => {
                 <Ionicons name="options" size={28} color={Colors.white} />
             </TouchableOpacity>
         </View>
-        <CategoryButtons />
+
+        <CategoryButtons onCategoryChanged={onCategoryChanged} />
 
       </View>
     </>

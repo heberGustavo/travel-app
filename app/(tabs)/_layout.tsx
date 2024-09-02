@@ -11,7 +11,7 @@ export default function Layout() {
           backgroundColor: Colors.bgColor,
           borderTopWidth: 0,
           padding: 0,
-          paddingBottom: 10
+          paddingBottom: 20
         },
         tabBarShowLabel: false,
         tabBarActiveTintColor: Colors.black,
