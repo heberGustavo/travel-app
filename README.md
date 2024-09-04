@@ -1,6 +1,9 @@
 <h1 align="center">Travel 🌇⛅</h1>
-</br>
+<p align="center">
+  This project show only the Home Page
+</p>
 
+</br>
 <p align="center">
   <a href="#globe_with_meridians-Technologies-and-Concepts-Implemented">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#gear-Architecture">Architecture</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -37,9 +40,9 @@ $ git clone https://github.com/heberGustavo/travel-app.git
 
 # 3. In Terminal, type:
   3.1 - npm install
-  3.2 - npm run dev
+  3.2 - npx expo start
 
-# 4. Open the application in browser
+# 4. Open the application in app or browser
 
 # 5. It's running 
 
