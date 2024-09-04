@@ -31,8 +31,7 @@ export default function Listing({ listing, category }: Props) {
 
   const renderItems: ListRenderItem<ListingType> = ({ item }) => {
     return (
-      <Link href={`/listing/${item.id}`} asChild>
-        <TouchableOpacity>
+      <TouchableOpacity>
           <View style={styles.item}>
             <Image source={{ uri: item.image }} style={styles.image} />
 
@@ -63,7 +62,6 @@ export default function Listing({ listing, category }: Props) {
             </View>
           </View>
         </TouchableOpacity>
-      </Link>
     );
   };
 
